@@ -1,3 +1,11 @@
 .homepage-login-signup{
     float: right;
 }
+
+.toolbar-spacer{
+    flex: 1 1 auto;
+}
+
+.home-toolbar{
+    opacity: 100;
+}

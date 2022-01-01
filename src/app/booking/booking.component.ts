@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./booking.component.css']
 })
 export class BookingComponent implements OnInit {
-
-  constructor() { }
+alert: boolean = false;
+  constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
+  }
+
+  bookAppointment(){
+    this.alert=true;
+  }
+
+  closeAlert(){
+    this.alert=false;
   }
 
 }

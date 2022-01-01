@@ -6,6 +6,22 @@
             <mat-error>Name is <strong>required!!!</strong> </mat-error>
         </mat-form-field>
     </p>
+
+    <!--<p>
+        <mat-form-field class="w-75" appearance="outline">
+            <mat-radio-group aria-label="Gender">
+                <mat-radio-button matInput value="M">Male</mat-radio-button>
+                <mat-radio-button matInput value="F">Female</mat-radio-button>
+              </mat-radio-group>              
+        </mat-form-field>
+    </p> -->
+
+    <!--<p>
+        <mat-form-field appearance="outline">
+            <input type="text" placeholder="testing">
+        <button class="btn btn-primary">ok</button>
+        </mat-form-field>
+    </p> -->
     <p>
         <mat-form-field class="w-75" appearance="outline">
             <mat-label>Email</mat-label>
@@ -40,14 +56,21 @@
             </mat-error>
         </mat-form-field>
     </p>
-    <p>
+    <!--<p>
         <mat-form-field class="w-75" appearance="outline">
             <mat-label>Confirm Password</mat-label>
             <input matInput type="password" formControlName="confirmPassword">
             
         </mat-form-field>
-    </p>
+    </p> -->
+    
+    <p>
     <button mat-raised-button color="primary" type="submit" [disabled]="!signUpForm.valid">
         Signup
     </button>
+</p>
+
+    <span><h4>Already have an account? <a routerLink="../login">Login</a></h4> </span>
+
+    
 </form>

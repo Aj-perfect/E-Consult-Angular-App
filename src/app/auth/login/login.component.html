@@ -1,12 +1,16 @@
 <div class="container">
     <div class="row mt-3">
         <div class="col-12 col-lg-4 offset-lg-4">
-            <mat-card class="text-center">
-                <mat-card-header>
-                    <mat-card-title>Login</mat-card-title>
-                </mat-card-header>
+            <mat-card class="text-center mt-5">
+                <mat-toolbar class="login-toolbar">
+                    <span class="logo">E-Consult</span> 
+                    <span class="toolbar-spacer"></span>
+                    <span>Login</span>
+                </mat-toolbar>
+                
                 <mat-card-content>
                     <form action="" class="mt-5" [formGroup]="LoginForm" (ngSubmit)="onLogin()">
+                        <h4>Please enter your email and password to login</h4>
                         <p>
                             <mat-form-field class="w-75" appearance="outline">
                                 <mat-label>Email</mat-label>

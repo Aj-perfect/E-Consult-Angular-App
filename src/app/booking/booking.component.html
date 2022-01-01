@@ -1,38 +1,74 @@
-<div class="container" >
+<div class="container">
+    
     <div class="row mt-3">
         <div class="col-12 col-lg-4 offset-lg-4">
-            <div fxLayoutAlign= "center center" fxFlexFill >
-            <mat-card class="text-center">
-                
-                <mat-card-header>
-                    <mat-card-title>Book Appointment</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <form action="">
-                        <mat-form-field class="mt-5 mb-5" color="accent" appearance="fill">
-                            <mat-label>Choose a date</mat-label>
-                            <input matInput [matDatepicker]="picker">
-                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                            <mat-datepicker #picker></mat-datepicker>
-                        </mat-form-field>
-
-                        <mat-form-field class="mt-5 mb-5" appearance="fill">
-                            <mat-label>Choose a time</mat-label>
-                            <input matInput type="time" id="inputMDEx1">
-                        </mat-form-field>
+            <div fxLayoutAlign="center center" fxFlexFill>
+                <mat-card class="text-center">
 
 
-                        <div class="mt-5 mb-5">
+                    <mat-card-header>
+                        <mat-card-title>Book Appointment</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Success!</strong> 
+                            <div>
+                                Your booking appointment has
+                                <br/> been submitted successfully.
+                            </div>
+                            <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div> 
+                        
+                        <form (ngSubmit)="bookAppointment()">
+                            
+                            <mat-form-field appearance="outline">
+                                <mat-label>Doctors</mat-label>
+                                <select matNativeControl required>
+                                    <option value="">Select a Doctor</option>
+                                    <option value="Dr A">Walter White</option>
+                                    <option value="Dr B">Sarah Johnson</option>
+                                    <option value="Dr C">William Anderson</option>
+                                    <option value="Dr D">Amanda Jepson</option>
+                                </select>
+                            </mat-form-field>
+
                             <p>
-                                <button mat-raised-button color="primary" type="submit">
-                                    Book Appointment
-                                </button>
+                                <mat-form-field class="example-full-width" appearance="outline">
+                                    <mat-label>Enter Summary of Symptoms</mat-label>
+                                    <textarea matInput placeholder="Ex. I feel pain on my back..."></textarea>
+                                  </mat-form-field>
                             </p>
-                        </div>
-                    </form>
-                </mat-card-content>
-            </mat-card>
+
+                            <p>
+                                <mat-form-field class="example-full-width" color="accent" appearance="outline">
+                                    <mat-label>Choose a date</mat-label>
+                                    <input matInput [matDatepicker]="picker">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                </mat-form-field>
+                            </p>
+
+                            <p>
+                                <mat-form-field  appearance="outline">
+                                    <mat-label>Choose a time</mat-label>
+                                    <input matInput type="time" id="inputMDEx1">
+                                </mat-form-field>
+                            </p>
+
+
+                            <div class="mt-5 mb-5">
+                                <p>
+                                    <button mat-raised-button color="primary" type="submit">
+                                        Book Appointment
+                                    </button>
+                                </p>
+                            </div>
+                        </form>
+                    </mat-card-content>
+                </mat-card>
+            </div>
         </div>
-        </div>
-    </div>
+    </div> 
 </div>

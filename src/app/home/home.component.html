@@ -2,12 +2,17 @@
     <div class="container">
         <header class="header">
           <div class="top">
-            <div class="logo">E-Consult</div>
-            <!-- <nav class="nav"></nav> -->
-          
-            <span role="button" class="btn-text" routerLink="auth/login">LOGIN</span>
-            <span role="button" class="btn-text" routerLink="auth/signup">SIGN UP</span>
-          
+            <div class="logo">E-Consult</div>  
+              <span class="toolbar-spacer"></span>                    
+              <button mat-button routerLink="auth/login">LOGIN</button>
+              <button mat-button routerLink="auth/signup">SIGN UP</button>
+
+            <!--<mat-toolbar class="home-toolbar">              
+                <span class="logo">E-Consult</span>
+                <span class="toolbar-spacer"></span>
+                <button mat-button routerLink="auth/login">LOGIN</button>
+                <button mat-button routerLink="auth/signup">SIGN UP</button>
+            </mat-toolbar> -->
            
           </div>
           <div class="header-text mb-3">
@@ -20,8 +25,7 @@
             </p>
           </div>
           <div class="btn mt-5">
-            <a routerLink="booking" class="btn-link">
-              
+            <a routerLink="auth/login" class="btn-link">              
               <span class="btn-text" >Book An Appointment</span>
             </a>
           </div>
