@@ -38,19 +38,34 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
      ),
      url("assets/img/pexels-shvets-production-8413181.jpg");
    background-size: cover;
-   height: 100vh;
+   height: 90vh;
    padding: 2rem;
  }
  
  .top {
    display: flex;
-   justify-content: space-between;
+   
  }
  
  .logo {
    font-size: 2.5rem;
    color: #51b6b6;
    font-weight: bolder;
+ }
+
+ .step-option {
+   font-family: helvetica;
+  font-size: 2.5rem;
+  color: lightgray;
+  font-weight: bolder;
+ }
+
+ .icon-option {
+   width: 100px;
+   height: 200px;
+   padding: 1.5rem 1.5rem;
+   background-size: contain;
+   align-content: center;
  }
  
  .nav {
@@ -60,7 +75,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
  .header-text {
    position: absolute;
    top: 50%;
-   left: 55%;
+   left: 50%;
    transform: translate(-50%, -50%);
  }
  
@@ -70,6 +85,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    letter-spacing: 0.5rem;
    text-align: center;
  }
+
+ .header-auth{
+   font-weight: bolder;
+ }
  
  .header-text-sub {
    text-align: center;
@@ -77,15 +96,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    margin-top: 2.5rem;
    line-height: 2.5rem;
    margin-bottom: 7rem;
+   padding-right: 3.5rem;
  }
  
  .btn {
    position: absolute;
-   top: 70%;
-   left: 56%;
+   top: 80%;
+   left: 50%;
    transform: translate(-50%, -50%);
    text-align: center;
  }
+
+ .btn-get-started {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
  
  .btn-link,
  .btn-link:link,
@@ -102,6 +129,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
  .btn-text {
    display: block;
  }
+
+ .section-text-main {
+  color: #51b6b6;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
  
  .form {
    background-color: #99d9d9;
@@ -141,6 +179,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    font-size: 2rem;
    font-weight: bolder;
  }
+
+ .toolbar-spacer{
+  flex: 1 1 auto;
+}
  
  .history {
    padding: 10rem;
@@ -177,3 +219,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    font-size: 2rem;
  }
  
+ .home-footer{
+   background-color: rgb(78, 74, 74);
+   color: white;  
+   padding: 5rem;   
+   text-align: center;
+ }

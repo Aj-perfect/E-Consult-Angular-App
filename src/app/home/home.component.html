@@ -3,9 +3,12 @@
         <header class="header">
           <div class="top">
             <div class="logo">E-Consult</div>  
-              <span class="toolbar-spacer"></span>                    
-              <button mat-button routerLink="auth/login">LOGIN</button>
-              <button mat-button routerLink="auth/signup">SIGN UP</button>
+              <span class="toolbar-spacer"></span> 
+              <!--<a type="button" routerLink="auth/login" class="btn btn-info">LOGIN</a>                   
+              <a type="button" routerLink="auth/signup" class="btn btn-info">SIGN UP</a>  -->                 
+              
+              <button mat-button routerLink="auth/login" class="header-auth">LOGIN</button>
+              <button mat-button routerLink="auth/signup" class="header-auth">SIGN UP</button>
 
             <!--<mat-toolbar class="home-toolbar">              
                 <span class="logo">E-Consult</span>
@@ -15,23 +18,86 @@
             </mat-toolbar> -->
            
           </div>
-          <div class="header-text mb-3">
-            <h1 class="header-text-main">Committed to You</h1>
-            <p class="header-text-sub">
-            E-consult is an integrated Telehealth booking solution platform designed to support and enhance medical appointment 
-            in the hospital. It is a solution that seeks to transform the current health care delivery system.
-            The platform promises a quick and unterrupted appointment booking system which intends to eradicate the long
-              wait and queue in the hospital.
-            </p>
+          <div class="row"> 
+            <div class="header-text">
+              <h1 class="header-text-main">Committed to You</h1>
+              <div class="header-text-sub text-wrap">
+              E-consult is an integrated Telehealth booking solution platform designed to support and enhance medical appointment 
+              in the hospital. It is a solution that seeks to transform the current health care delivery system.
+              The platform promises a quick and unterrupted appointment booking system which intends to eradicate the long
+                wait and queue in the hospital.
+              </div>
+            </div>
           </div>
-          <div class="btn mt-5">
-            <a routerLink="auth/login" class="btn-link">              
-              <span class="btn-text" >Book An Appointment</span>
-            </a>
+          <div >
+            <div class="btn">
+              <a routerLink="auth/login" class="btn-link">              
+                <span class="btn-text" >Book An Appointment</span>
+              </a>
+            </div>
           </div>
         </header>
         
       </div> 
+      <main role="main">
+        <div class="container">
+          <div class="row">
+            <div class="section-text-main">
+              Three simple steps on how to get started with E-consult
+            </div>
+          </div>
+          <div class="row pb-5">
+            <div class="col-sm-4 pb-5 text-center">
+              <p class="logo">Step 1</p>
+              <div class=" text-center">
+                <img src="assets/img/icons/icon-register-24.jpg" class="img-fluid icon-option" alt="">              
+              </div>
+              <p class="step-option">Register Now</p>
+              <div class="p-5 pt-0">
+                Create an account in less than a minute
+              </div>
+            </div>
+            <div class="col-sm-4 pb-5 text-center">
+              <p class="logo">Step 2</p>
+              <div class=" text-center">
+                <img src="assets/img/icons/icon-appointment.jpg" class="img-fluid icon-option" alt="">              
+              </div>
+              <p class="step-option">Book an appointment</p>
+              <div class="p-5 pt-0">
+                Avoid the long wait in the hospital, <br> book an appointment with a click
+              </div>
+            </div>
+            <div class="col-sm-4 text-center">
+              <p class="logo">Step 3</p>
+              <div class=" text-center">
+                <img src="assets/img/icons/icon-meet-doctor.png" class="img-fluid icon-option" alt="">              
+              </div>
+              <p class="step-option">Meet a Doctor</p>
+              <div class="p-5 pt-0">
+                Get medical attention as you meet <br> a doctor and feel better
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="row mb-5">
+            <div class="btn-get-started">              
+              <button mat-raised-button color="primary" routerLink="auth/signup" >
+                Get started
+            </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="row home-footer">
+          <div>
+            Copyright &copy; 2021. All rights reserved | Andela Community Project MG07 
+          </div>          
+        </div>
+      </footer>
+
 
 
  
