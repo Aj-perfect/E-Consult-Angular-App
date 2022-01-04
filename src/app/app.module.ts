@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { HomeModule } from './home/home.module';
 
 
 
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HomeModule
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]

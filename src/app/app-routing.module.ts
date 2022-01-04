@@ -6,8 +6,8 @@ import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  {path:'', component: HomeComponent }, 
-  {path: 'home', component: HomeComponent}, 
+  {path:'', component: HomeComponent },  
+  { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) }, 
   { path: 'auth/signup', loadChildren: () => import('./auth/signup/signup.module').then(m => m.SignupModule) },  
   { path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule) },
   { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
